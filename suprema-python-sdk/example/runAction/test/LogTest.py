@@ -1,0 +1,46 @@
+import grpc
+import datetime
+import threading
+
+EVENT_QUEUE_SIZE = 16
+FIRST_DOOR_EVENT = 0x5000
+LAST_DOOR_EVENT = 0x5E00
+
+class LogTest:
+    def __init__(self, eventSvc):
+        self.eventSvc = eventSvc
+        self.eventCh = None
+
+    def handleEvent(self):
+        try:
+            for event in self.eventCh:
+                self.printEvent(event)
+        except grpc.RpcError as e:
+            if e.code() == grpc.StatusCode.CANCELLED:
+                print('Monitoring is cancelled', flush=True)
+            else:
+                print(f'Cannot get realtime events: {e}')
+
+    def startMonitoring(self, deviceID):
+        try:
+            self.eventSvc.enableMonitoring(deviceID)
+            self.eventCh = self.eventSvc.subscribe(EVENT_QUEUE_SIZE)
+            threading.Thread(target=self.handleEvent).start()
+        except grpc.RpcError as e:
+            print(f'Cannot start monitoring: {e}', flush=True)
+            raise
+
+    def stopMonitoring(self, deviceID):
+        try:
+            self.eventSvc.disableMonitoring(deviceID)
+            self.eventCh.cancel()
+        except grpc.RpcError as e:
+            print(f'Cannot stop monitoring: {e}', flush=True)
+            raise
+
+    def printEvent(self, event):
+        timestamp = datetime.datetime.utcfromtimestamp(event.timestamp)
+        if FIRST_DOOR_EVENT <= event.eventCode <= LAST_DOOR_EVENT:
+            print(f'{timestamp}: Door {event.entityID}, {self.eventSvc.getEventString(event.eventCode, event.subCode)}', flush=True)
+        else:
+            print(f'{timestamp}: Device {event.deviceID}, User {event.userID}, {self.eventSvc.getEventString(event.eventCode, event.subCode)}', flush=True)

@@ -1,0 +1,109 @@
+import grpc
+
+import connect_pb2
+
+from example.cli.menu import MenuItem, Menu
+from example.cli.input import UserInput
+
+class DeviceMenu:
+  menu = None
+  connectMasterSvc = None
+  gatewayID = None
+
+  def __init__(self, connectMasterSvc, gatewayID):
+    self.connectMasterSvc = connectMasterSvc
+    self.gatewayID = gatewayID
+
+    menuItems = [
+      MenuItem('1', 'Set connection mode', self.setConnectionMode, False),
+      MenuItem('2', 'Enable SSL', self.enableSSL, False),
+      MenuItem('3', 'Disable SSL', self.disableSSL, False),
+      MenuItem('4', 'Disconnect', self.disconnect, False),
+      MenuItem('5', 'Disconnect All', self.disconnectAll, False),
+      MenuItem('6', 'Refresh the device list', self.getDeviceList, False),
+      MenuItem('q', 'Return to Main Menu', None, True),
+    ]
+
+    self.menu = Menu('Device Menu', menuItems)
+
+  def getDeviceList(self):
+    try:
+      devList = self.connectMasterSvc.getDeviceList(self.gatewayID)
+
+      print(f'***** Managed devices: {len(devList)}')
+      
+      if len(devList) > 0:
+        print(devList)
+
+      return devList
+
+    except grpc.RpcError as e:
+      print(f'Cannot get the device list: {e}')
+      return []
+
+  def disconnect(self):
+    deviceIDs = UserInput.getDeviceIDs()
+
+    if len(deviceIDs) == 0:
+      print('No device to disconnect', flush=True)
+      return
+
+    try:
+      self.connectMasterSvc.disconnect(deviceIDs)
+    except grpc.RpcError:
+      pass
+
+  def disconnectAll(self):
+    try:
+      self.connectMasterSvc.disconnectAll(self.gatewayID)
+    except grpc.RpcError:
+      pass    
+
+  def setConnectionMode(self):
+    deviceIDs = UserInput.getDeviceIDs()
+
+    if len(deviceIDs) == 0:
+      print('No device to set', flush=True)
+      return
+
+    modeStr = input('>> Select the connection mode (0: Gateway to Device(default), 1: Device to Gateway): ')
+    mode = connect_pb2.SERVER_TO_DEVICE
+    if modeStr.strip() == '1':
+      mode = connect_pb2.DEVICE_TO_SERVER
+
+    try:
+      self.connectMasterSvc.setConnectionMode(deviceIDs, mode)
+    except grpc.RpcError:
+      pass
+
+  def enableSSL(self):
+    deviceIDs = UserInput.getDeviceIDs()
+
+    if len(deviceIDs) == 0:
+      print('No device to enable', flush=True)
+      return
+
+    try:
+      self.connectMasterSvc.enableSSL(deviceIDs)
+    except grpc.RpcError:
+      pass
+
+  def disableSSL(self):
+    deviceIDs = UserInput.getDeviceIDs()
+
+    if len(deviceIDs) == 0:
+      print('No device to disable', flush=True)
+      return
+
+    try:
+      self.connectMasterSvc.disableSSL(deviceIDs)
+    except grpc.RpcError:
+      pass
+
+  def show(self):
+    devList = self.getDeviceList()
+    
+    if len(devList) > 0:
+      self.menu.show()
+    else:
+      print('No connected device. Connect to some devices first.', flush=True)
