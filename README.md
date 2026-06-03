@@ -159,7 +159,11 @@ Name	Role
 منال ياسر عدره	Developer
 رهف يونس عبد الحميد	Developer
 Supervised by: Dr. Redwan Dandeh
+## 📄 Documentation
 
+- **[📋 Google Cloud Deployment Strategy](./Cloud_Deployment_Strategy_SkillSwap_AI.md)** - Complete deployment roadmap and cloud readiness assessment
+- **[📊 Project Analysis](./ما%20هو%20طبيعة%20عمل%20المنصة.pdf)** - SWOT analysis, requirements, performance metrics
+- **[🎓 Full Graduation Project](./Graduation%20project-3.pdf)** - Complete thesis (60+ pages, UML diagrams, database schema)
 📞 Contact
 For questions or collaboration opportunities, please open an issue on GitHub or contact the team through the repository.
 
