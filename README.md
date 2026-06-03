@@ -151,6 +151,7 @@ Local deployment only: Not yet deployed to cloud (future work)
 
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+☁️ Google Cloud Integration (Future): Deploy backend on Cloud Run with Cloud SQL, Cloud Storage, and Secret Manager for production scalability.
 
 👩‍💻 Team
 Name	Role
