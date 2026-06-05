@@ -1,4 +1,4 @@
-=asgiref==3.10.0
+asgiref==3.10.0
 Django==5.2.12
 django-cors-headers==4.9.0
 channels==4.3.1
