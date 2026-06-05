@@ -2,6 +2,7 @@ asgiref==3.10.0
 Django==5.2.12
 django-cors-headers==4.9.0
 channels==4.3.1
+django-fernet-fields==0.6
 djangorestframework==3.16.1
 djangorestframework-simplejwt==5.5.1
 django-multifactor==0.8.7
@@ -14,11 +15,4 @@ sqlparse==0.5.3
 tzdata==2025.2
 urllib3==2.5.0
 cryptography==46.0.3
-google-cloud-storage==2.18.2
-django-storages==1.14.6
 celery==5.6.3
-opencv-python==4.8.1.78
-numpy==1.26.4
-torch==2.1.0
-torchaudio==2.1.0
-torchvision==0.16.0
