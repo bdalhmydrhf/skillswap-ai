@@ -14,5 +14,4 @@ COPY . .
 # جمع الملفات الثابتة بشكل آمن (تجاهلي الأخطاء)
 RUN python manage.py collectstatic --noinput || true
 
-# ✅ استخدام WSGI بدلاً من ASGI (لأننا ننشر نسخة مبسطة)
-CMD gunicorn backend.asgi_light:application --bind 0.0.0.0:$PORT --workers 4 --threads 8
+CMD gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT --workers 4 --threads 8
