@@ -165,6 +165,35 @@ Supervised by: Dr. Redwan Dandeh
 - **[📋 Google Cloud Deployment Strategy](./Cloud_Deployment_Strategy_SkillSwap_AI.md)** - Complete deployment roadmap and cloud readiness assessment
 - **[📊 Project Analysis](./ما%20هو%20طبيعة%20عمل%20المنصة.pdf)** - SWOT analysis, requirements, performance metrics
 - **[🎓 Full Graduation Project](./Graduation%20project-3.pdf)** - Complete thesis (60+ pages, UML diagrams, database schema)
+## 🌐 Google Cloud Deployment Proof
+
+> The application is successfully deployed on Google Cloud Shell. Below are screenshots confirming the live deployment.
+
+### 1. Cloud Shell Terminal Status
+*Active Django server running on port 8080 with FAISS and blockchain systems loaded:*
+
+![Cloud Shell Terminal](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/terminal_deployment.png?raw=true)
+
+### 2. Django Admin Interface
+*Django administration panel accessible via the cloud shell URL:*
+
+![Django Admin Login](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/admin_login.png?raw=true)
+
+### Deployment Summary
+
+| Component | Status |
+| :--- | :--- |
+| **Cloud Provider** | ✅ Google Cloud Shell (europe-west1) |
+| **Server** | ✅ Running on 0.0.0.0:8080 |
+| **Django Admin** | ✅ Accessible |
+| **FAISS Engine** | ✅ Successfully loaded |
+| **Blockchain V4.0** | ✅ Active |
+| **Voice Biometric** | ✅ Enabled |
+| **CORS** | ✅ Configured with cloud URL |
+
+**Live URL:** `https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/admin/`
+
+*Note: Access requires being logged into the Google account used for deployment.*
 📞 Contact
 For questions or collaboration opportunities, please open an issue on GitHub or contact the team through the repository.
 
