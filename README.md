@@ -135,6 +135,7 @@ Blockchain dependency: Requires Sepolia testnet connection (free)
 Redis required: For Celery and rate limiting
 
 Local deployment only: Not yet deployed to cloud (future work)
+**✅ Cloud Status:** The project is **CURRENTLY DEPLOYED** on Google Cloud Shell (europe-west1 region). The Django server runs on port 8080 and the application is accessible via a public URL. Full production deployment on Google Cloud Run is planned as future work for enhanced scalability.
 
 🔮 Future Work
 📱 Mobile app with Flutter (iOS/Android)
