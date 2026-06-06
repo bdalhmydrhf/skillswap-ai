@@ -58,8 +58,10 @@ Built for freelancers in regions where platforms like Upwork and Fiverr are rest
 
 ### Blockchain & API Status
 
-- **Blockchain Contract Status (Example):** `https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/api/contracts/1/blockchain-status/`
-- **System Health Check:** `https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/api/v3/health/`
+- **Blockchain Contract Status (Example):**
+-  https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/api/contracts/1/blockchain-status/
+- **System Health Check:**
+-  https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/api/v3/health/
 - https://8080-cs-a844824d-8295-4183-9037-9a8488ec3805.cs-europe-west1-xedi.cloudshell.dev/api/v3/metrics/
 - 
 *Note: Access requires being logged into the Google account used for deployment.*
