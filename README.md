@@ -173,12 +173,12 @@ Supervised by: Dr. Redwan Dandeh
 ### 1. Cloud Shell Terminal Status
 *Active Django server running on port 8080 with FAISS and blockchain systems loaded:*
 
-![Cloud Shell Terminal](https://i.ibb.co/d48TQXhz/terminal-deployment.png)
+![Cloud Shell Terminal](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/terminal_deployment.png?raw=true)
 
 ### 2. Django Admin Interface
 *Django administration panel accessible via the cloud shell URL:*
 
-![Django Admin Login](https://ibb.co/yCpc7h8)
+![Django Admin Login](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/admin_login.png?raw=true)
 
 ### Deployment Summary
 
