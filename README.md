@@ -178,7 +178,7 @@ Supervised by: Dr. Redwan Dandeh
 ### 2. Django Admin Interface
 *Django administration panel accessible via the cloud shell URL:*
 
-![Django Admin Login](https://i.ibb.co/7DQdLgG/admin-login.png)
+![Django Admin Login](https://ibb.co/yCpc7h8)
 
 ### Deployment Summary
 
