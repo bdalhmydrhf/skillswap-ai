@@ -165,6 +165,7 @@ Supervised by: Dr. Redwan Dandeh
 - **[📋 Google Cloud Deployment Strategy](./Cloud_Deployment_Strategy_SkillSwap_AI.md)** - Complete deployment roadmap and cloud readiness assessment
 - **[📊 Project Analysis](./ما%20هو%20طبيعة%20عمل%20المنصة.pdf)** - SWOT analysis, requirements, performance metrics
 - **[🎓 Full Graduation Project](./Graduation%20project-3.pdf)** - Complete thesis (60+ pages, UML diagrams, database schema)
+
 ## 🌐 Google Cloud Deployment Proof
 
 > The application is successfully deployed on Google Cloud Shell. Below are screenshots confirming the live deployment.
@@ -172,12 +173,12 @@ Supervised by: Dr. Redwan Dandeh
 ### 1. Cloud Shell Terminal Status
 *Active Django server running on port 8080 with FAISS and blockchain systems loaded:*
 
-![Cloud Shell Terminal](terminal_deployment.png)
+![Cloud Shell Terminal](https://raw.githubusercontent.com/bdalhmydrhf/skillswap-ai/main/terminal_deployment.png)
 
 ### 2. Django Admin Interface
 *Django administration panel accessible via the cloud shell URL:*
 
-![Django Admin Login](admin_login.png)
+![Django Admin Login](https://raw.githubusercontent.com/bdalhmydrhf/skillswap-ai/main/admin_login.png)
 
 ### Deployment Summary
 
