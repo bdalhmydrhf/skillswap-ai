@@ -24,6 +24,9 @@ Built for freelancers in regions where platforms like Upwork and Fiverr are rest
 [![SkillSwap AI Demo](https://img.youtube.com/vi/F5tDheKSTtA/0.jpg)](https://youtu.be/F5tDheKSTtA)
 
 **Watch the full demo:** [https://youtu.be/F5tDheKSTtA](https://youtu.be/F5tDheKSTtA)
+![Django Admin Login](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/admin_login.png?raw=true)
+![Django Admin Login](admin_login.png)
+
 
 ## ✨ Key Features
 
