@@ -179,7 +179,7 @@ Supervised by: Dr. Redwan Dandeh
 *Django administration panel accessible via the cloud shell URL:*
 
 ![Django Admin Login](https://github.com/bdalhmydrhf/skillswap-ai/blob/main/admin_login.png?raw=true)
-
+<img src="https://raw.githubusercontent.com/bdalhmydrhf/skillswap-ai/main/admin_login.png" alt="Django Admin Login" width="600">
 ### Deployment Summary
 
 | Component | Status |
