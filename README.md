@@ -190,7 +190,23 @@ Local deployment only: Not yet deployed to cloud (future work)
 ☁️ Google Cloud Run deployment for scalability
 
 💳 Crypto payments integration
+## 🤖 Roadmap: Evolution to GenAI & Google Cloud Agent Architecture
 
+> **Note to Google Cloud Hackathon Judges:**  
+> Our core focus for SkillSwap AI during this phase was building a **production-ready, highly secure, and decentralized intelligent infrastructure**—integrating robust multimodal biometrics, live database states, and ultra-fast vector searching via FAISS.
+
+> We view this architectural foundation as the essential **"Operating System"** required before deploying autonomous generative agents. Our immediate next step on the technical roadmap includes full alignment with Google Cloud’s GenAI ecosystem:
+
+### 1. Google Vertex AI Agent Builder & Gemini Integration
+We are transitioning our deterministic Django backend logic into an autonomous system by embedding **Gemini 1.5 Pro** as the central reasoning engine. This agent will handle multi-step user task planning, dispute arbitration, and interactive smart-contract generation.
+
+### 2. Model Context Protocol (MCP) Adoption
+To enable our future Gemini Agent to securely interact with our decentralized stack, we are developing a custom **SkillSwap MCP Server**. This will expose safely managed tools allowing the Generative Agent to:
+- Query vector states directly from the **FAISS engine**.
+- Trigger audit logs and escrow states on the **Ethereum Sepolia blockchain** network.
+- Verify user session integrity alongside our **Multimodal Biometric gateway**.
+
+**This roadmap demonstrates our team's clear understanding of the hackathon's core theme. While we prioritized building a robust decentralized infrastructure (the "Hardware"), we are fully prepared to immediately integrate the "AI Agent Brain" (Google Gemini & MCP) as our very next sprint.**
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 ☁️ Google Cloud Integration (Future): Deploy backend on Cloud Run with Cloud SQL, Cloud Storage, and Secret Manager for production scalability.
