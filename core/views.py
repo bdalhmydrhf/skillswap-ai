@@ -1359,7 +1359,7 @@ def record_auth_result(request):
     
     logger.info(f"📊 Recorded auth result for user {request.user.id}: {'success' if was_successful else 'failed'}")
     
-    return Response({'status': 'recorded', 'success': was_successful}
+    return Response({'status': 'recorded', 'success': was_successful})
                     
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
