@@ -21,7 +21,7 @@ Built for freelancers in regions where platforms like Upwork and Fiverr are rest
 
 ## 📽️ Demo Video
 
-[![SkillSwap AI Demo](https://youtu.be/v0KfvbA8pUw?si=J7r3hXmr3WvXw7EG)
+[![SkillSwap AI Demo](https://img.youtube.com/vi/v0KfvbA8pUw/0.jpg)](https://youtu.be/v0KfvbA8pUw)
 
 **Watch the full demo:** [https://youtu.be/F5tDheKSTtA](https://youtu.be/F5tDheKSTtA)
 
