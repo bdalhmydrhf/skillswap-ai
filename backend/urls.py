@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 from core.views import get_contract_blockchain_status
 from core.views import analyze_and_decide
 from biometric.views import get_user_biometric_status
+from core.views import hackathon_compliance_endpoint
 
 # ✅ استيراد من core.views
 from core.views import (
@@ -116,6 +117,7 @@ urlpatterns = [
     path('api/v3/metrics/', MetricsAPIView.as_view(), name='metrics'),
     path('api/v3/clear-cache/', ClearCacheAPIView.as_view(), name='clear_cache'),
     path('api/v3/clear-cache/<int:user_id>/', ClearCacheAPIView.as_view(), name='clear_cache_user'),
+    path('api/v3/compliance/', hackathon_compliance_endpoint, name='hackathon_compliance'),
 
     # ============================================================
     # 🔄 نسخ متوافقة مع الـ API القديم (للتوافق العكسي)
