@@ -25,6 +25,9 @@ Built for freelancers in regions where platforms like Upwork and Fiverr are rest
 
 **Watch the full demo:** [https://youtu.be/F5tDheKSTtA](https://youtu.be/F5tDheKSTtA)
 
+### 📹 Detailed Walkthrough (12 min)
+For judges or developers interested in the complete technical deep dive:
+[Watch the full detailed walkthrough on YouTube](https://youtu.be/F5tDheKSTtA)
 ## 🌐 Google Cloud Deployment Proof
 
 > The application is successfully deployed on Google Cloud Shell. Below are screenshots confirming the live deployment.
